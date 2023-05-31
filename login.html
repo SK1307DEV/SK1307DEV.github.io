@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="/css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Cholitos S.A // Iniciar Sesion</title>
+  </head>
+  <body>
+    <header
+      class="bg-gray-800 py-2 transition hover:scale-105 fixed w-full top-0"
+    >
+      <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between">
+          <div class="flex">
+            <a
+              href="/index.html"
+              class="text-white text-4xl font-bold transition hover:scale-105"
+              >🦊 Foxtrot Enterteinment</a
+            >
+          </div>
+          <div>
+            <ul class="flex space-x-4 transition hover:scale-105">
+              <li>
+                <a href="registro.html" class="text-white hover:text-gray-300"
+                  >Registrarse</a
+                >
+              </li>
+              <li>  
+                <a href="login.html" class="text-white hover:text-gray-300"
+                  >Iniciar Sesion</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="parallax"></div>
+
+    <div
+      class="bg-cover bg-center py-32"
+      style="
+        background-image: url(https://via.placeholder.com/800x1200/475666/000000);
+      "
+    >
+      <form
+        action="login.php" method="POST"
+        class="max-w-sm mx-auto bg-gray-400 m-10 p-8 rounded shadow-md"
+      >
+        <div class="mb-6">
+          <label for="usuario" class="block text-gray-700 font-bold mb-2"
+            >Usuario</label
+          >
+          <input
+            type="text"
+            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:scale-105 transition"
+            id="usuario"
+            name="usuario"
+            placeholder="Nombre de usuario"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="clave" class="block text-gray-700 font-bold mb-2"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:scale-105 transition"
+            id="password"
+            name="password"
+            placeholder="Contraseña"
+          />
+        </div>
+
+        <div class="mb-6 flex items-center">
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            class="mr-2 leading-tight"
+          />
+          <label for="checkbox">Mantener sesion iniciada</label>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <input
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:scale-105 transition"
+            type="submit" value="Iniciar sesion" id="btningresar" name="btningresar"
+          >
+          </input>
+        </div>
+        <a
+          href="#"
+          class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+          >No tienes una cuenta?</a
+        >
+        <a
+          href="#"
+          class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+          >Olvidaste tu contraseña?</a
+        >
+      </form>
+    </div>
+
+    <div class="parallax"></div>
+
+    <footer class="bg-gray-800 py-6">
+        <div class="container3 px-6 items-center text-center">
+          <div class="flex justify-between items-center">
+            <div>
+              <a href="#" class="text-x1 font-bold text-white">Foxtrot Enterteinment </a>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <a href="#" class="text-gray-400 hover:text-gray-500 mx-3"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-gray-500 mx-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-gray-500 mx-3"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+       
+      </footer>
+  </body>
+</html>
